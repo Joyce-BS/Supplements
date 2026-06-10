@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="暂无照片">
+  <rect width="640" height="480" fill="#eef6f3"/>
+  <rect x="170" y="96" width="300" height="288" rx="28" fill="#ffffff" stroke="#d6ded9" stroke-width="8"/>
+  <path d="M260 154h120v172H260z" fill="#f3c64f"/>
+  <path d="M260 240h120" stroke="#174c46" stroke-width="14"/>
+  <path d="M260 154h120v172H260z" fill="none" stroke="#174c46" stroke-width="14"/>
+  <text x="320" y="430" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="38" fill="#52605c">暂无照片</text>
+</svg>

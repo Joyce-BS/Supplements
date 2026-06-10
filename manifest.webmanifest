@@ -1,0 +1,19 @@
+{
+  "name": "补剂查询",
+  "short_name": "补剂",
+  "description": "家用补剂查询清单，适合手机大字查看。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#22685f",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
