@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 body {
@@ -54,9 +54,17 @@ input {
   font-size: 0.95rem;
 }
 
+.subtitle {
+  max-width: 720px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
 h1 {
   margin: 0;
-  font-size: clamp(1.9rem, 6vw, 2.8rem);
+  font-size: clamp(1.75rem, 5.4vw, 2.55rem);
   line-height: 1.15;
 }
 
@@ -90,7 +98,7 @@ main {
 .search-area label {
   display: block;
   margin-bottom: 8px;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
 }
 
@@ -108,7 +116,7 @@ main {
   padding: 0 16px;
   background: #ffffff;
   color: var(--text);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .search-row input:focus-visible,
@@ -126,7 +134,7 @@ button:focus-visible {
 .status-area {
   margin: 12px 0 0;
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .status-card {
@@ -165,7 +173,7 @@ button:focus-visible {
 }
 
 .card-body {
-  padding: 18px;
+  padding: 14px;
 }
 
 .names {
@@ -219,14 +227,40 @@ button:focus-visible {
 }
 
 .info-text {
-  font-size: 1.12rem;
+  font-size: 1.02rem;
   font-weight: 700;
+}
+
+.amount-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 6px;
+  background: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.amount-table th,
+.amount-table td {
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.amount-table th {
+  background: var(--brand);
+  color: #ffffff;
+  text-align: left;
+}
+
+.amount-table tr:nth-child(even) td {
+  background: var(--surface-soft);
 }
 
 .detail-toggle {
   width: 100%;
   margin-top: 2px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .details {
@@ -249,9 +283,78 @@ button:focus-visible {
   color: var(--warning);
 }
 
+.element-section {
+  margin-top: 34px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.section-heading {
+  margin-bottom: 14px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.55rem;
+  line-height: 1.25;
+}
+
+.section-heading p:last-child {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.elements-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 10px;
+}
+
+.element-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.element-toggle {
+  width: 100%;
+  min-height: 52px;
+  border: 0;
+  padding: 10px 14px;
+  background: var(--surface-soft);
+  color: var(--brand-dark);
+  text-align: left;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.element-toggle::after {
+  content: "+";
+  float: right;
+  font-weight: 900;
+}
+
+.element-item.is-open .element-toggle::after {
+  content: "-";
+}
+
+.element-note {
+  display: none;
+  margin: 0;
+  padding: 12px 14px 14px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.element-item.is-open .element-note {
+  display: block;
+}
+
 @media (max-width: 640px) {
   html {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .top-bar {

@@ -24,7 +24,9 @@
 ]
 ```
 
-照片放在 `images` 文件夹里，然后在 `photo` 字段写相对路径，例如 `images/vitamin-d.jpg`。
+网页显示用的照片建议放在 `images/optimized` 文件夹里，然后在 `photo` 字段写相对路径，例如 `images/optimized/vitamin-d.jpg`。
+
+不要把手机原始大图直接用于网页。原图通常有几 MB，会让妈妈手机打开很慢。先压缩成宽度约 900 像素、单张 100-300 KB 左右的小图，再上传到 GitHub。
 
 ## 发给妈妈使用
 
@@ -37,6 +39,18 @@
 不要直接双击 `index.html` 预览。很多浏览器会因为安全限制拦截读取 `supplements.json`，页面就看不到补剂内容。
 
 在 Windows 上可以双击 `start-preview.bat`，然后用它打开的 `http://127.0.0.1:4173/` 地址预览。
+
+## 上传到 GitHub 时的图片
+
+GitHub Pages 只需要上传网页实际使用的图片，也就是 `supplements.json` 里 `photo` 字段指向的文件。
+
+当前应上传：
+
+```text
+images/optimized
+```
+
+原始大图可以只保存在本地备份，不建议上传到 GitHub Pages。
 
 ## 德国和中国访问
 

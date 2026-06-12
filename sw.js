@@ -1,4 +1,4 @@
-const CACHE_NAME = "supplements-v2";
+const CACHE_NAME = "supplements-v9";
 const APP_FILES = [
   "./",
   "index.html",
